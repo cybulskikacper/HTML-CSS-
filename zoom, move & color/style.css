@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: grey;
+}
+
+button {
+	position: absolute;
+	top: 50px;
+	width: 120px;
+	padding: 10px 30px;
+	background: none;
+	color: white;
+	font-weight: bold;
+	border: 3px solid white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	transform: translateX(-50%);
+	font-family: 'Nunito', sans-serif;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.btn-zoom {
+	left: 30%;
+}
+
+.btn-move {
+	left: 50%;
+}
+
+.btn-color {
+	left: 70%;
+}
+
+button:hover {
+	background-color: white;
+	color: black;
+}
+
+.square {
+	position: absolute;
+	top: 150px;
+	width: 100px;
+	height: 100px;
+	transform: translateX(-50%);
+	border-radius: 25px;
+	transition: 3s;
+}
+
+.blue {
+	left: 30%;
+	background-color: rgb(0, 110, 255);
+	border: 2px solid rgb(7, 46, 97);
+	box-shadow: 0 0 15px rgb(0, 110, 255);
+}
+
+.red {
+	left: 50%;
+	background-color: rgb(206, 42, 42);
+	border: 2px solid rgb(97, 7, 7);
+	box-shadow: 0 0 15px rgb(206, 42, 42);
+}
+
+.green {
+	left: 70%;
+	background-color: rgb(0, 255, 34);
+	border: 2px solid rgb(7, 97, 7);
+	box-shadow: 0 0 15px rgb(0, 255, 34);
+}
+
+.btn-zoom:hover ~ .square {
+	width: 200px;
+	height: 200px;
+}
+
+.btn-move:hover ~ .square {
+	top: 300px;
+}
+
+.btn-color:hover ~ .square {
+	background-color: black;
+	border: 2px solid white;
+	box-shadow: 0 0 15px black;
+}
+
+/* 
+
+
+color: ma zmienić kolor kwadratów i cienia na czarny, obramowanie białe. */
